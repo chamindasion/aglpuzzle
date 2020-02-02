@@ -1,0 +1,178 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{C75D702D-B4D1-466A-8B21-61A2BB90DF61}"
+	ProjectSection(SolutionItems) = preProject
+		Client\index.html = Client\index.html
+		Client\package-lock.json = Client\package-lock.json
+		Client\package.json = Client\package.json
+		Client\README.md = Client\README.md
+		Client\settings.js = Client\settings.js
+		Client\tsconfig.json = Client\tsconfig.json
+		Client\tsd.json = Client\tsd.json
+		Client\webpack.config.js = Client\webpack.config.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{6080D893-338B-4C85-A397-95FC5D3A13FD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{1A84FEF4-EAAE-4AED-87F5-65ADA73F1DE0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agl.Puzzle.Data", "Server\Core\Agl.Puzzle.Data\Agl.Puzzle.Data.csproj", "{54ED617F-0412-41BD-B2B3-E988E776AEB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agl.Puzzle.Data.Contracts", "Server\Core\Agl.Puzzle.Data.Contracts\Agl.Puzzle.Data.Contracts.csproj", "{69E4AC56-078C-4214-80F9-DB2457778823}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agl.Puzzle.Models", "Server\Core\Agl.Puzzle.Models\Agl.Puzzle.Models.csproj", "{786B1234-5503-416C-AD02-BE860A1B1CDB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agl.Puzzle.Service", "Server\Core\Agl.Puzzle.Service\Agl.Puzzle.Service.csproj", "{E601D03E-76AE-4352-A5DB-4926B0B1A2D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agl.Puzzle.Service.Contracts", "Server\Core\Agl.Puzzle.Service.Contracts\Agl.Puzzle.Service.Contracts.csproj", "{98EE6FAE-DF13-4456-A194-96886C1B3EC4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agl.Puzzle.API", "Server\API\Agl.Puzzle.API\Agl.Puzzle.API.csproj", "{4038179B-3623-49CF-ADB5-F0DD2280D109}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C70A270B-E39D-4B22-A848-7CFF8064CC45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agl.Puzzle.Service.Tests", "Agl.Puzzle.Service.Tests\Agl.Puzzle.Service.Tests.csproj", "{3EC62944-11FA-4F27-A468-F0A8DA2819C1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".vscode", ".vscode", "{E3267E30-DB9C-44C0-AF29-A833ADA3265E}"
+	ProjectSection(SolutionItems) = preProject
+		Client\.vscode\tasks.json = Client\.vscode\tasks.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dist", "dist", "{32B9090B-AA6C-410D-898F-CF55B50CB2A8}"
+	ProjectSection(SolutionItems) = preProject
+		Client\dist\bundle.js = Client\dist\bundle.js
+		Client\dist\bundle.js.map = Client\dist\bundle.js.map
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4440A862-741D-41B3-992F-989FDBFDC426}"
+	ProjectSection(SolutionItems) = preProject
+		Client\src\index.tsx = Client\src\index.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "actions", "actions", "{02CCEDF4-BA24-47F1-8040-AC449E6FD8E3}"
+	ProjectSection(SolutionItems) = preProject
+		Client\src\actions\PetAction.tsx = Client\src\actions\PetAction.tsx
+		Client\src\actions\PetsApi.js = Client\src\actions\PetsApi.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "components", "components", "{4512DA80-AA14-4255-8EE7-EF5B58B84494}"
+	ProjectSection(SolutionItems) = preProject
+		Client\src\components\PetApp.tsx = Client\src\components\PetApp.tsx
+		Client\src\components\PetAppList.tsx = Client\src\components\PetAppList.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "constants", "constants", "{9D40267D-AEC6-4D2E-8FA4-C514621E7219}"
+	ProjectSection(SolutionItems) = preProject
+		Client\src\constants\ActionConstants.tsx = Client\src\constants\ActionConstants.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dispatcher", "dispatcher", "{4C5AA120-69DB-48C2-B501-1BAA91BE075F}"
+	ProjectSection(SolutionItems) = preProject
+		Client\src\dispatcher\AppDispatcher.tsx = Client\src\dispatcher\AppDispatcher.tsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "stores", "stores", "{49F82B35-F0F2-4516-A6A7-F50A20469361}"
+	ProjectSection(SolutionItems) = preProject
+		Client\src\stores\PetStore.js = Client\src\stores\PetStore.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "typings", "typings", "{9A2CB950-3999-4730-A3CD-70749A31DF42}"
+	ProjectSection(SolutionItems) = preProject
+		Client\typings\tsd.d.ts = Client\typings\tsd.d.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eventemitter3", "eventemitter3", "{58719CAB-8B42-400F-BDB4-EC71F7540FB7}"
+	ProjectSection(SolutionItems) = preProject
+		Client\typings\eventemitter3\eventemitter3.d.ts = Client\typings\eventemitter3\eventemitter3.d.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "flux", "flux", "{9CCBC58A-843C-4D22-91E2-0ECE50CBF17D}"
+	ProjectSection(SolutionItems) = preProject
+		Client\typings\flux\flux.d.ts = Client\typings\flux\flux.d.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "react", "react", "{A6623B3B-05DF-409C-9CA7-038F43C7DE54}"
+	ProjectSection(SolutionItems) = preProject
+		Client\typings\react\react-addons-create-fragment.d.ts = Client\typings\react\react-addons-create-fragment.d.ts
+		Client\typings\react\react-addons-css-transition-group.d.ts = Client\typings\react\react-addons-css-transition-group.d.ts
+		Client\typings\react\react-addons-linked-state-mixin.d.ts = Client\typings\react\react-addons-linked-state-mixin.d.ts
+		Client\typings\react\react-addons-perf.d.ts = Client\typings\react\react-addons-perf.d.ts
+		Client\typings\react\react-addons-pure-render-mixin.d.ts = Client\typings\react\react-addons-pure-render-mixin.d.ts
+		Client\typings\react\react-addons-test-utils.d.ts = Client\typings\react\react-addons-test-utils.d.ts
+		Client\typings\react\react-addons-transition-group.d.ts = Client\typings\react\react-addons-transition-group.d.ts
+		Client\typings\react\react-addons-update.d.ts = Client\typings\react\react-addons-update.d.ts
+		Client\typings\react\react-dom.d.ts = Client\typings\react\react-dom.d.ts
+		Client\typings\react\react-global.d.ts = Client\typings\react\react-global.d.ts
+		Client\typings\react\react.d.ts = Client\typings\react\react.d.ts
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54ED617F-0412-41BD-B2B3-E988E776AEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54ED617F-0412-41BD-B2B3-E988E776AEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54ED617F-0412-41BD-B2B3-E988E776AEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54ED617F-0412-41BD-B2B3-E988E776AEB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69E4AC56-078C-4214-80F9-DB2457778823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69E4AC56-078C-4214-80F9-DB2457778823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69E4AC56-078C-4214-80F9-DB2457778823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69E4AC56-078C-4214-80F9-DB2457778823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786B1234-5503-416C-AD02-BE860A1B1CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786B1234-5503-416C-AD02-BE860A1B1CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786B1234-5503-416C-AD02-BE860A1B1CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786B1234-5503-416C-AD02-BE860A1B1CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E601D03E-76AE-4352-A5DB-4926B0B1A2D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E601D03E-76AE-4352-A5DB-4926B0B1A2D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E601D03E-76AE-4352-A5DB-4926B0B1A2D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E601D03E-76AE-4352-A5DB-4926B0B1A2D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98EE6FAE-DF13-4456-A194-96886C1B3EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EE6FAE-DF13-4456-A194-96886C1B3EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EE6FAE-DF13-4456-A194-96886C1B3EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EE6FAE-DF13-4456-A194-96886C1B3EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4038179B-3623-49CF-ADB5-F0DD2280D109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4038179B-3623-49CF-ADB5-F0DD2280D109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4038179B-3623-49CF-ADB5-F0DD2280D109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4038179B-3623-49CF-ADB5-F0DD2280D109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EC62944-11FA-4F27-A468-F0A8DA2819C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EC62944-11FA-4F27-A468-F0A8DA2819C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EC62944-11FA-4F27-A468-F0A8DA2819C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EC62944-11FA-4F27-A468-F0A8DA2819C1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A84FEF4-EAAE-4AED-87F5-65ADA73F1DE0} = {6080D893-338B-4C85-A397-95FC5D3A13FD}
+		{E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F} = {6080D893-338B-4C85-A397-95FC5D3A13FD}
+		{54ED617F-0412-41BD-B2B3-E988E776AEB2} = {E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F}
+		{69E4AC56-078C-4214-80F9-DB2457778823} = {E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F}
+		{786B1234-5503-416C-AD02-BE860A1B1CDB} = {E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F}
+		{E601D03E-76AE-4352-A5DB-4926B0B1A2D3} = {E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F}
+		{98EE6FAE-DF13-4456-A194-96886C1B3EC4} = {E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F}
+		{4038179B-3623-49CF-ADB5-F0DD2280D109} = {1A84FEF4-EAAE-4AED-87F5-65ADA73F1DE0}
+		{C70A270B-E39D-4B22-A848-7CFF8064CC45} = {E4B1CB1F-05B8-4DE3-86B3-A12B0E2F3F4F}
+		{3EC62944-11FA-4F27-A468-F0A8DA2819C1} = {C70A270B-E39D-4B22-A848-7CFF8064CC45}
+		{E3267E30-DB9C-44C0-AF29-A833ADA3265E} = {C75D702D-B4D1-466A-8B21-61A2BB90DF61}
+		{32B9090B-AA6C-410D-898F-CF55B50CB2A8} = {C75D702D-B4D1-466A-8B21-61A2BB90DF61}
+		{4440A862-741D-41B3-992F-989FDBFDC426} = {C75D702D-B4D1-466A-8B21-61A2BB90DF61}
+		{02CCEDF4-BA24-47F1-8040-AC449E6FD8E3} = {4440A862-741D-41B3-992F-989FDBFDC426}
+		{4512DA80-AA14-4255-8EE7-EF5B58B84494} = {4440A862-741D-41B3-992F-989FDBFDC426}
+		{9D40267D-AEC6-4D2E-8FA4-C514621E7219} = {4440A862-741D-41B3-992F-989FDBFDC426}
+		{4C5AA120-69DB-48C2-B501-1BAA91BE075F} = {4440A862-741D-41B3-992F-989FDBFDC426}
+		{49F82B35-F0F2-4516-A6A7-F50A20469361} = {4440A862-741D-41B3-992F-989FDBFDC426}
+		{9A2CB950-3999-4730-A3CD-70749A31DF42} = {C75D702D-B4D1-466A-8B21-61A2BB90DF61}
+		{58719CAB-8B42-400F-BDB4-EC71F7540FB7} = {9A2CB950-3999-4730-A3CD-70749A31DF42}
+		{9CCBC58A-843C-4D22-91E2-0ECE50CBF17D} = {9A2CB950-3999-4730-A3CD-70749A31DF42}
+		{A6623B3B-05DF-409C-9CA7-038F43C7DE54} = {9A2CB950-3999-4730-A3CD-70749A31DF42}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F2EC513-976C-43DB-8331-4C2052743C51}
+	EndGlobalSection
+EndGlobal

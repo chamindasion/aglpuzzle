@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="2.0.0" />
+    <PackageReference Include="NBuilder" Version="6.1.0" />
+    <PackageReference Include="NSubstitute" Version="4.2.1" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="nunit.framework" Version="2.63.0" />
+    <PackageReference Include="NUnitTestAdapter" Version="2.1.1" />
+    <PackageReference Include="RestSharp" Version="106.10.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Server\Core\Agl.Puzzle.Data.Contracts\Agl.Puzzle.Data.Contracts.csproj" />
+    <ProjectReference Include="..\Server\Core\Agl.Puzzle.Data\Agl.Puzzle.Data.csproj" />
+    <ProjectReference Include="..\Server\Core\Agl.Puzzle.Models\Agl.Puzzle.Models.csproj" />
+    <ProjectReference Include="..\Server\Core\Agl.Puzzle.Service.Contracts\Agl.Puzzle.Service.Contracts.csproj" />
+    <ProjectReference Include="..\Server\Core\Agl.Puzzle.Service\Agl.Puzzle.Service.csproj" />
+  </ItemGroup>
+
+</Project>

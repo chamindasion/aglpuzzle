@@ -1,0 +1,1 @@
+var petApiUrl = 'http://localhost:64674/api/summaryresponse';

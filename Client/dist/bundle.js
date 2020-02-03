@@ -23546,7 +23546,7 @@ var PetAppList = /** @class */ (function (_super) {
     }
     PetAppList.prototype.componentDidMount = function () {
         var currentComponent = this;
-        PetsApi_1.default.getPetSummary(petType_1.PetType.Cat).then(function (response) {
+        PetsApi_1.PetsApi.GetPetSummary(petType_1.PetType.Cat).then(function (response) {
             currentComponent.setState({
                 items: response
             });
@@ -23573,32 +23573,31 @@ exports.default = PetAppList;
 
 /***/ }),
 /* 200 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_axios__);
 
-
-let PetsApi = {
-    getPetSummary(petType){
-        return __WEBPACK_IMPORTED_MODULE_0_axios___default()(petApiUrl.concat('?petType=', petType), {
+Object.defineProperty(exports, "__esModule", { value: true });
+var axios_1 = __webpack_require__(201);
+var PetsApi = /** @class */ (function () {
+    function PetsApi() {
+    }
+    PetsApi.GetPetSummary = function (petType) {
+        return axios_1.default(petApiUrl.concat('?petType=', petType), {
             method: 'GET',
             headers: {
-              'Access-Control-Allow-Origin': '*',
-              'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Content-Type': 'application/json',
             },
-          }).then(response => {            
-            console.log('All posts: ', response.data)
-            var responseData = response.data;            
-
+        }).then(function (response) {
+            console.log('All posts: ', response.data);
+            var responseData = response.data;
             return responseData;
-          })
-    }    
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (PetsApi);
+        });
+    };
+    return PetsApi;
+}());
+exports.PetsApi = PetsApi;
 
 
 /***/ }),

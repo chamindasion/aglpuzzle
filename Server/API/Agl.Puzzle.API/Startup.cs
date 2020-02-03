@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Agl.Puzzle.Data;
+﻿using Agl.Puzzle.Data;
 using Agl.Puzzle.Data.Contracts;
 using Agl.Puzzle.Models;
 using Agl.Puzzle.Service;
@@ -11,8 +7,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace Agl.Puzzle.API
 {

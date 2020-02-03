@@ -2,7 +2,7 @@
 // for more information see the following page on the TypeScript wiki:
 // https://github.com/Microsoft/TypeScript/wiki/JSX
 import * as React from 'react';
-import PetsApi from '../actions/PetsApi';
+import {PetsApi} from '../actions/PetsApi';
 import {PetType} from '../models/petType'
 
 class PetAppList extends React.Component<any, any>{
@@ -15,7 +15,7 @@ class PetAppList extends React.Component<any, any>{
 
     componentDidMount() {           
         var currentComponent = this;        
-        PetsApi.getPetSummary(PetType.Cat).then(function (response) {            
+        PetsApi.GetPetSummary(PetType.Cat).then(function (response) {            
             currentComponent.setState({
                 items: response
             });

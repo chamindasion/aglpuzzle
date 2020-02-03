@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 using Agl.Puzzle.Models;
 using Agl.Puzzle.Models.Dto;
 

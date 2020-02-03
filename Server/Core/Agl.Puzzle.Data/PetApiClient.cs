@@ -12,7 +12,7 @@ namespace Agl.Puzzle.Data
         {
             
         }
-        public List<Person> GetPersonPets()
+        public List<Person> GetAllPerson()
         {
             var request = new RestRequest("/people.json", Method.GET);
             return Execute<List<Person>>(request);

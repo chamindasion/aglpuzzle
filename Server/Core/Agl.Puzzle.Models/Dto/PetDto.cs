@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Agl.Puzzle.Models.Dto
+﻿namespace Agl.Puzzle.Models.Dto
 {
     public class PetDto
     {

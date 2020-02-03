@@ -3,7 +3,7 @@
 // https://github.com/Microsoft/TypeScript/wiki/JSX
 import * as React from 'react';
 import PetsApi from '../actions/PetsApi';
-import Axios from 'axios'
+import {PetType} from '../models/petType'
 
 class PetAppList extends React.Component<any, any>{
     constructor(props) {
@@ -15,7 +15,7 @@ class PetAppList extends React.Component<any, any>{
 
     componentDidMount() {           
         var currentComponent = this;        
-        PetsApi.getPetSummary().then(function (response) {            
+        PetsApi.getPetSummary(PetType.Cat).then(function (response) {            
             currentComponent.setState({
                 items: response
             });

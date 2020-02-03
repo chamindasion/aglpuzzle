@@ -1,9 +1,8 @@
 import Axios from 'axios';
 
 let PetsApi = {
-    getPetSummary(){         
-       //TODO: read url from config 
-        return Axios(petApiUrl, {
+    getPetSummary(petType){
+        return Axios(petApiUrl.concat('?petType=', petType), {
             method: 'GET',
             headers: {
               'Access-Control-Allow-Origin': '*',
@@ -12,7 +11,6 @@ let PetsApi = {
           }).then(response => {            
             console.log('All posts: ', response.data)
             var responseData = response.data;            
-
             return responseData;
           })
     }    

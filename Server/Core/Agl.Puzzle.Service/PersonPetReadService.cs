@@ -3,7 +3,6 @@ using Agl.Puzzle.Models.Dto;
 using Agl.Puzzle.Service.Contracts;
 using System;
 using System.Collections.Generic;
-using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using Agl.Puzzle.Models;
 
@@ -14,14 +13,14 @@ namespace Agl.Puzzle.Service
 
         private readonly IPetApiClient _petApiClient;
         
-        public PersonPetReadService(IServiceProvider serviceProvider)
+        public PersonPetReadService(IPetApiClient petApiClient)
         {
-            _petApiClient = serviceProvider.GetService<IPetApiClient>();
+            _petApiClient = petApiClient;
         }
 
-        public List<GenderPetSummaryDto> GetCategorisePets()
+        public List<GenderPetSummaryDto> GetCategorizePets(PetType petType)
         {            
-            var resultDtos = GetFilteredDataByPetType(PetType.Cat)
+            var filteredGroupPersonData = GetFilteredDataByPetType(petType)
                 .GroupBy(item => item.GenderType)
             .Select(group => new GenderPetSummaryDto()
             {
@@ -29,12 +28,12 @@ namespace Agl.Puzzle.Service
                 Pets = group.SelectMany(p=> p.Pets).OrderBy(q=>q.Name).ToList()
             })
             .ToList();
-            return resultDtos;
+            return filteredGroupPersonData;
         }
 
-        private IEnumerable<GenderPetCategoryDto> GetFilteredDataByPetType(PetType petType)
+        public IEnumerable<GenderPetCategoryDto> GetFilteredDataByPetType(PetType petType)
         {
-            var resultDtos = new List<GenderPetCategoryDto>();            
+            var personSummaryData = new List<GenderPetCategoryDto>();            
             var genderPets = _petApiClient.GetPersonPets();
             foreach (var genderPet in genderPets)
             {
@@ -51,9 +50,9 @@ namespace Agl.Puzzle.Service
                 }
                 genderPetCategoryDto.Pets = tempPets;
                 genderPetCategoryDto.GenderType = genderPet.GetGenderType();
-                resultDtos.Add(genderPetCategoryDto);
+                personSummaryData.Add(genderPetCategoryDto);
             }
-            return resultDtos.ToList();
+            return personSummaryData.ToList();
         }
     }
 }

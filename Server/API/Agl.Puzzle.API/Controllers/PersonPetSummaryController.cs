@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Agl.Puzzle.Models;
 using Agl.Puzzle.Models.Dto;
 using Agl.Puzzle.Service.Contracts;
 using Microsoft.AspNetCore.Http;
@@ -15,16 +16,19 @@ namespace Agl.Puzzle.API.Controllers
     public class PersonPetSummaryController : Controller
     {
         private readonly IPersonPetReadService _personPetReadService;
-        public PersonPetSummaryController(IServiceProvider serviceProvider)
+        public PersonPetSummaryController(IPersonPetReadService personPetReadService)
         {
-            _personPetReadService = serviceProvider.GetService<IPersonPetReadService>();
+            _personPetReadService = personPetReadService;
         }
 
-        // GET: api/summaryresponse
+        /// <summary>
+        /// Return Person Summary by Gender and then list of pets name with filter by type
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
-        public IEnumerable<GenderPetSummaryDto> Get()
+        public IEnumerable<GenderPetSummaryDto> Get(PetType petType)
         {
-            return _personPetReadService.GetCategorisePets();
+            return _personPetReadService.GetCategorizePets(petType);
         }       
     }
 }

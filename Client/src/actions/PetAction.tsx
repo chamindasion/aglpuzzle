@@ -1,12 +1,13 @@
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import ActionConstants from '../constants/ActionConstants';
-import PetsApi from '../actions/PetsApi'
+import PetsApi from './PetsApi'
+import {PetType} from '../models/petType'
 
 class PetAction {
     public getInitialPets(){
         AppDispatcher.dispatch({
             actionType: ActionConstants.PET_LOAD,
-            initialPets: PetsApi.getPetSummary()
+            initialPets: PetsApi.getPetSummary(PetType.Cat)
         })
     };
     public createPet(petText) {

@@ -25,12 +25,6 @@ export default class PetApp extends React.Component<{}, {}> {
         this.setState({ pets: PetStore.getPets() });
     }
 
-    public handleAddPet() {
-        var newPet = ReactDOM.findDOMNode<HTMLInputElement>(this.refs["txtT"]).value;
-        new PetAction().createPet(newPet);
-        ReactDOM.findDOMNode<HTMLInputElement>(this.refs["txtT"]).value = '';
-    }
-
     //********** DOM **********
     render() {
         return (

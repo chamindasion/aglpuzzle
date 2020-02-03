@@ -12,9 +12,9 @@ class Main extends React.Component<any,any>{
         return (   
             <div>
                 <div>        
-                    <h2>Pet Summary</h2>
+                    <h2 className="center">Pet Summary</h2>   
                 </div>                 
-                <div> 
+                <div className="center box">
                     <PetApp/>
                 </div>
             </div>

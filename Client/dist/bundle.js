@@ -10307,8 +10307,8 @@ var Main = /** @class */ (function (_super) {
     Main.prototype.render = function () {
         return (React.createElement("div", null,
             React.createElement("div", null,
-                React.createElement("h2", null, "Pet Summary")),
-            React.createElement("div", null,
+                React.createElement("h2", { className: "center" }, "Pet Summary")),
+            React.createElement("div", { className: "center box" },
                 React.createElement(PetApp_1.default, null))));
     };
     return Main;
@@ -23556,9 +23556,9 @@ var PetAppList = /** @class */ (function (_super) {
         });
     };
     PetAppList.prototype.render = function () {
-        return (React.createElement("div", null, this.state.items.map(function (childItem, key) {
+        return (React.createElement("div", { className: "container" }, this.state.items.map(function (childItem, key) {
             return React.createElement("div", null,
-                childItem.genderType,
+                React.createElement("h3", { className: "center" }, childItem.genderType),
                 React.createElement("div", null, childItem.pets.map(function (pet, key) {
                     return React.createElement("div", null,
                         "-  ",

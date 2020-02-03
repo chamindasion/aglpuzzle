@@ -27,11 +27,11 @@ class PetAppList extends React.Component<any, any>{
 
     render() {                    
         return (
-                <div>
+                <div className="container">
                     {
                         this.state.items.map((childItem, key) =>
                             <div>                                
-                                {childItem.genderType}                                
+                                <h3 className="center">{childItem.genderType}</h3>                                                           
                                     <div>                                    
                                     {   
                                         childItem.pets.map((pet, key) => 
